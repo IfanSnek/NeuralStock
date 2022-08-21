@@ -1,0 +1,36 @@
+/* CSS Document */
+
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #3F3F3F;
+	background-size: contain
+}
+.dark {
+
+	background-color: #3B4323;
+	color: aliceblue
+}
+.darktan {
+	background-color: #110A00; 
+}
+.whitebg {
+	background-color: #D78029;
+	color: white;
+}
+.mySlides {
+	display: none;
+}
+.caption {
+	position: relative;
+	bottom: 40px;
+}
+.contrast {
+	color: #E5E4E4;
+}
+p {
+	color: #231E1E;
+}
+img {
+	
+	border-radius: 10px;
+}

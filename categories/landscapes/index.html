@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>NeuralStock - Free AI Generated Stock Images</title>
+
+		<!-- update the version number as needed -->
+		<script defer src="/__/firebase/9.9.3/firebase-app-compat.js"></script>
+		<!-- include only the Firebase features as you need -->
+		<script defer src="/__/firebase/9.9.3/firebase-auth-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-database-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-firestore-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-functions-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-messaging-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-storage-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-analytics-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-remote-config-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-performance-compat.js"></script>
+		<!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+		<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+		<link rel="stylesheet" href="/css/styles.css" />
+		
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="w3-top">
+			<!-- Navbar for large screens -->
+			<div class="w3-bar w3-black w3-card w3-hide-small">
+				<a href="/index.html" class="w3-bar-item w3-button w3-padding-large">NeuralStock</a>
+				<div class="w3-right">
+					<a href="mailto:contact@neuralstock.org" class="w3-bar-item w3-button w3-padding-large">Contribute</a>
+					<a href="/construction.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+					<a href="mailto:contact@neuralstock.org"  target="_top" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+				</div>
+				<a href="#search" class="w3-padding-large w3-hover-red w3-right"><i class="fa fa-search"></i></a>
+			</div>
+			<!-- Navbar for small screens -->
+			<div class="w3-bar w3-black w3-card w3-hide-large w3-hide-medium">
+				<a href="#search" class="w3-padding-large w3-hover-red w3-right"><i class="fa fa-search"></i></a>
+				<a href="/index.html" class="w3-bar-item w3-button w3-padding-large">NeuralStock</a>
+			</div>
+		</div>
+		<!-- Heading -->
+		<div class="whitebg">
+			<div style="margin: 100px;"></div>
+			<div style="font-size: 2px;" class="darktan">&nbsp;</div>
+			<div style="margin: 50px;"></div>
+			<div class="w3-wide w3-center">
+				<h1>Landscapes</h1>
+			</div>
+			<div style="margin: 50px;"></div>
+			<div style="font-size: 2px;" class="darktan">&nbsp;</div>
+			<div style="margin: 50px;"></div>
+		</div>
+		
+		<div id="gallery"></div>
+		<script src="/js/gallery.js"></script>
+
+		<script type="module">
+			// Import the functions you need from the SDKs you need
+			import { initializeApp } from  "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";;
+			// TODO: Add SDKs for Firebase products that you want to use
+			// https://firebase.google.com/docs/web/setup#available-libraries
+
+			// Your web app's Firebase configuration
+			const firebaseConfig = {
+			  apiKey: "AIzaSyBvTR5NSX7yVnBpAMJX5mYHNilpHJWhG98",
+			  authDomain: "ifan-b1200.firebaseapp.com",
+			  databaseURL: "https://ifan-b1200.firebaseio.com",
+			  projectId: "ifan-b1200",
+			  storageBucket: "ifan-b1200.appspot.com",
+			  messagingSenderId: "640046369250",
+			  appId: "1:640046369250:web:c3ffbd4f0185de5c3051bb"
+			};
+
+			// Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+		</script>
+	</body>
+</html>

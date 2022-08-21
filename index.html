@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>NeuralStock - Free AI Generated Stock Images</title>
+
+		<!-- update the version number as needed -->
+		<script defer src="/__/firebase/9.9.3/firebase-app-compat.js"></script>
+		<!-- include only the Firebase features as you need -->
+		<script defer src="/__/firebase/9.9.3/firebase-auth-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-database-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-firestore-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-functions-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-messaging-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-storage-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-analytics-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-remote-config-compat.js"></script>
+		<script defer src="/__/firebase/9.9.3/firebase-performance-compat.js"></script>
+		<!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+		<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+		<link rel="stylesheet" href="css/styles.css" />
+		
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="w3-top">
+			<!-- Navbar for large screens -->
+			<div class="w3-bar w3-black w3-card w3-hide-small">
+				<a href="./index.html" class="w3-bar-item w3-button w3-padding-large">NeuralStock</a>
+				<div class="w3-right">
+					<a href="mailto:contact@neuralstock.org" class="w3-bar-item w3-button w3-padding-large">Contribute</a>
+					<a href="./construction.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+					<a href="mailto:contact@neuralstock.org"  target="_top" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+				</div>
+				<a href="#search" class="w3-padding-large w3-hover-red w3-right"><i class="fa fa-search"></i></a>
+			</div>
+			<!-- Navbar for small screens -->
+			<div class="w3-bar w3-black w3-card w3-hide-large w3-hide-medium">
+				<a href="#search" class="w3-padding-large w3-hover-red w3-right"><i class="fa fa-search"></i></a>
+				<a href="./index.html" class="w3-bar-item w3-button w3-padding-large">NeuralStock</a>
+			</div>
+		</div>
+		<!-- Heading -->
+		<div class="whitebg">
+			<div style="margin: 100px;"></div>
+			<div style="font-size: 2px;" class="darktan">&nbsp;</div>
+			<div style="margin: 50px;"></div>
+			<div class="w3-wide w3-center">
+				<h1>100% free stock Images, brought to you by AI</h1>
+			</div>
+			<div style="margin: 50px;"></div>
+			<div style="font-size: 2px;" class="darktan">&nbsp;</div>
+			<div style="margin: 50px;"></div>
+		</div>
+		<!-- Automatic Slideshow Images -->
+		<div>
+			<div class="mySlides w3-display-container w3-center">
+				<img src="./featured/featured1.png" style="width:40%" alt="a vector graphic of a crane" />
+				<div class="w3-center-align w3-container w3-padding-32 w3-hide-small caption">
+					<p class="contrast"><b><br>A vector graphic of a crane</b></p>
+				</div>
+			</div>
+			<div class="mySlides w3-display-container w3-center">
+				<img src="./featured/featured2.png" style="width:40%" alt="A photo of a car going through a drive thru at The Home Depot taken on a 30mm lens camera from the passenger."/>
+				<div class="w3-center-align w3-container w3-padding-32 w3-hide-small caption">
+					<p class="contrast"><b>A photo of a car going through a drive thru at The<br> Home Depot taken on a 30mm lens camera from the passenger.</b></p>
+				</div>
+			</div>
+			<div class="mySlides w3-display-container w3-center">
+				<img src="./featured/featured3.png" style="width:40%" alt="A photo of an octopus freestyle skiing taken with a 30mm lens camera "/>
+				<div class="w3-center-align w3-container w3-padding-32 w3-hide-small caption">
+					<p class="contrast"><b><br>A photo of an octopus freestyle skiing taken with a 30mm lens camera</b></p>
+				</div>
+			</div>
+		</div>
+		<!-- Heading -->
+		<div class="whitebg">
+			<div style="margin: 50;"></div>
+			<div style="font-size: 2px;" class="darktan">&nbsp;</div>
+			<div style="margin: 50px;"></div>
+			<div class="w3-wide w3-center">
+				<h1>By Anyone, For Anyone</h1>
+			</div>
+			<div style="margin: 50px;"></div>
+			<div style="font-size: 2px;" class="darktan">&nbsp;</div>
+			<div style="margin: 50px;"></div>
+		</div>
+		
+		<div class="w3-row-padding">
+			<div class="w3-col l3 m6 w3-margin-bottom">
+			  <div class="w3-display-container">
+				<div class="w3-display-topleft w3-black w3-padding">People</div>
+				<img src="/categories/people/assets/preview.png" alt="House" style="width:100%" onClick="window.location = ('/categories/people')">
+			  </div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+			  <div class="w3-display-container">
+				<div class="w3-display-topleft w3-black w3-padding">Animals</div>
+				<img src="/categories/animals/assets/preview.png" alt="House" style="width:100%" onClick="window.location = ('/categories/animals')">
+			  </div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+			  <div class="w3-display-container">
+				<div class="w3-display-topleft w3-black w3-padding">Objects</div>
+				<img src="/categories/objects/assets/preview.png" alt="House" style="width:100%" onClick="window.location = ('/categories/objects')">
+			  </div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+			  <div class="w3-display-container">
+				<div class="w3-display-topleft w3-black w3-padding">Landscapes</div>
+				<img src="/categories/landscapes/assets/preview.png" alt="House" style="width:100%" onClick="window.location = ('/categories/landscapes')">
+			  </div>
+			</div>
+		  </div>
+
+		<script>
+			// Automatic Slideshow - change image every 6 seconds
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}
+			  x[myIndex-1].style.display = "block";
+			  setTimeout(carousel, 6000);
+			}
+		</script>
+		<script type="module">
+			// Import the functions you need from the SDKs you need
+			import { initializeApp } from  "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";;
+			// TODO: Add SDKs for Firebase products that you want to use
+			// https://firebase.google.com/docs/web/setup#available-libraries
+
+			// Your web app's Firebase configuration
+			const firebaseConfig = {
+			  apiKey: "AIzaSyBvTR5NSX7yVnBpAMJX5mYHNilpHJWhG98",
+			  authDomain: "ifan-b1200.firebaseapp.com",
+			  databaseURL: "https://ifan-b1200.firebaseio.com",
+			  projectId: "ifan-b1200",
+			  storageBucket: "ifan-b1200.appspot.com",
+			  messagingSenderId: "640046369250",
+			  appId: "1:640046369250:web:c3ffbd4f0185de5c3051bb"
+			};
+
+			// Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+		</script>
+	</body>
+</html>
